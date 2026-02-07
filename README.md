@@ -134,4 +134,4 @@ Key sections include:
 
 ## License
 
-Add your chosen license file (e.g., MIT/Apache-2.0) if you plan to distribute publicly.
+This project is licensed under the **Apache License 2.0**. See [LICENSE](./LICENSE).

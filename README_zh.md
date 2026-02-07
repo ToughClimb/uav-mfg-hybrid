@@ -138,4 +138,4 @@ python scripts/train.py --config path/to/config.yaml --route B --paraview
 
 ## 许可证
 
-若你计划公开发布，请在仓库根目录添加许可证文件（例如 MIT / Apache-2.0）。
+本项目采用 **Apache License 2.0**，详见 [LICENSE](./LICENSE)。
