@@ -1,0 +1,77 @@
+run:
+  exp_name: homing_no_obs_vortex
+
+scenario:
+  type: homing
+
+domain:
+  x: [0, 100]
+  y: [0, 100]
+  z: [0, 50]
+
+physics:
+  v_max_0: 20.0
+  v_min: 12.0
+  epsilon_c: 1.0
+  beta: 5.0
+  rho_jam: 0.25
+  rho_max: 0.05
+
+  source:
+    homing_q0: 1.0e-4
+
+wind:
+  base:
+    type: vortex
+    params:
+      center: [50.0, 50.0, 25.0]
+      strength: 5.0
+
+target:
+  type: sphere
+  params:
+    center: [50.0, 50.0, 15.0]
+    radius: 5.0
+
+obstacles: []
+
+barrier:
+  C_height: 0.08
+  k: 0.05
+  delta: 2.0
+  p: 1
+
+
+network:
+  hidden_layers: [64, 128, 128, 64]
+  activation: tanh
+
+numerical:
+  epsilon_reg: 1.0e-4
+
+fixed_point:
+  outer_iters: 10
+  relaxation_alpha: 0.2
+
+rho_solver:
+  method: finite_volume_upwind
+  grid:
+    nx: 100
+    ny: 100
+    nz: 50
+  pseudo_time:
+    dt: 0.0001
+  max_iters: 10000
+  tol: 1.0e-6
+
+sampling:
+  n_pde: 5000
+  n_boundary: 1000
+  n_depot: 200
+
+training:
+  optimizer: Adam
+  learning_rate: 0.001
+  step_size: 2000
+  gamma: 0.8
+  phi_epochs: 2000
