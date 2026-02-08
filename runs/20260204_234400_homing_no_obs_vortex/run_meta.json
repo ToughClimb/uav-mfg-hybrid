@@ -1,0 +1,33 @@
+{
+  "start_time": "2026-02-04 23:44:00",
+  "route": "B",
+  "device_arg": "auto",
+  "seed": 42,
+  "config_path": "paperconfig/homing_no_obs_vortex.yaml",
+  "argv": [
+    "scripts/train.py",
+    "--config",
+    "paperconfig/homing_no_obs_vortex.yaml",
+    "--route",
+    "B",
+    "--device",
+    "auto",
+    "--no-viz",
+    "--paraview-resolution",
+    "100",
+    "100",
+    "50",
+    "--paraview-batch-size",
+    "50000"
+  ],
+  "status": "success",
+  "exp_name": "homing_no_obs_vortex",
+  "output_dir": "runs/20260204_234400_homing_no_obs_vortex",
+  "log_file": "runs/20260204_234400_homing_no_obs_vortex/training.log",
+  "physics_checks": "passed",
+  "paraview_export": "disabled",
+  "visualization": "disabled",
+  "end_time": "2026-02-04 23:49:02",
+  "duration_seconds": 301.793517,
+  "exit_code": 0
+}

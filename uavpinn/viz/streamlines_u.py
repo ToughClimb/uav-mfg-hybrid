@@ -83,6 +83,9 @@ def plot_velocity_streamlines_2d(checkpoint_path: str, z_slice: float = 25.0,
     streamline_buffer = viz_cfg.get('streamline_obstacle_buffer', 0.0)
     streamline_buffer = float(streamline_buffer) if streamline_buffer is not None else 0.0
 
+    streamline_density_cfg = viz_cfg.get('streamline_u_density')
+    streamline_density = float(streamline_density_cfg) if streamline_density_cfg is not None else 0.9
+
     grad_phi_x = np.gradient(phi_values, x_range, axis=1)
     grad_phi_y = np.gradient(phi_values, y_range, axis=0)
 
@@ -204,7 +207,7 @@ def plot_velocity_streamlines_2d(checkpoint_path: str, z_slice: float = 25.0,
         broken_streamlines=False
     )
     if start_points is None:
-        stream_kwargs['density'] = 1.2
+        stream_kwargs['density'] = streamline_density
     else:
         stream_kwargs['start_points'] = start_points
 

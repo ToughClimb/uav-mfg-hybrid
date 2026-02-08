@@ -1,0 +1,33 @@
+{
+  "start_time": "2026-02-04 23:11:04",
+  "route": "B",
+  "device_arg": "auto",
+  "seed": 42,
+  "config_path": "paperconfig/p2p_1obs_no_wind.yaml",
+  "argv": [
+    "scripts/train.py",
+    "--config",
+    "paperconfig/p2p_1obs_no_wind.yaml",
+    "--route",
+    "B",
+    "--device",
+    "auto",
+    "--no-viz",
+    "--paraview-resolution",
+    "100",
+    "100",
+    "50",
+    "--paraview-batch-size",
+    "50000"
+  ],
+  "status": "success",
+  "exp_name": "p2p_1obs_no_wind",
+  "output_dir": "runs/20260204_231104_p2p_1obs_no_wind",
+  "log_file": "runs/20260204_231104_p2p_1obs_no_wind/training.log",
+  "physics_checks": "passed",
+  "paraview_export": "disabled",
+  "visualization": "disabled",
+  "end_time": "2026-02-04 23:16:42",
+  "duration_seconds": 337.0988,
+  "exit_code": 0
+}

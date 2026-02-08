@@ -1,0 +1,33 @@
+{
+  "start_time": "2026-02-05 00:09:39",
+  "route": "B",
+  "device_arg": "auto",
+  "seed": 42,
+  "config_path": "paperconfig/homing_no_obs_no_wind.yaml",
+  "argv": [
+    "scripts/train.py",
+    "--config",
+    "paperconfig/homing_no_obs_no_wind.yaml",
+    "--route",
+    "B",
+    "--device",
+    "auto",
+    "--no-viz",
+    "--paraview-resolution",
+    "100",
+    "100",
+    "50",
+    "--paraview-batch-size",
+    "50000"
+  ],
+  "status": "success",
+  "exp_name": "homing_no_obs_no_wind",
+  "output_dir": "runs/20260205_000939_homing_no_obs_no_wind",
+  "log_file": "runs/20260205_000939_homing_no_obs_no_wind/training.log",
+  "physics_checks": "passed",
+  "paraview_export": "disabled",
+  "visualization": "disabled",
+  "end_time": "2026-02-05 00:14:40",
+  "duration_seconds": 301.314948,
+  "exit_code": 0
+}

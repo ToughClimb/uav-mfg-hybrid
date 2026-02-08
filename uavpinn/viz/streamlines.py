@@ -57,6 +57,9 @@ def plot_streamlines_2d(checkpoint, config, objects, phi_model, output_dir: Path
         phi_norm = PowerNorm(gamma=phi_gamma, vmin=phi_vmin, vmax=phi_vmax)
     streamline_buffer = viz_cfg.get('streamline_obstacle_buffer', 0.0)
     streamline_buffer = float(streamline_buffer) if streamline_buffer is not None else 0.0
+
+    streamline_density_cfg = viz_cfg.get('streamline_density')
+    streamline_density = float(streamline_density_cfg) if streamline_density_cfg is not None else 0.9
     
     # Compute gradient
     grad_phi_x = np.gradient(phi_values, x_range, axis=1)
@@ -167,7 +170,7 @@ def plot_streamlines_2d(checkpoint, config, objects, phi_model, output_dir: Path
         broken_streamlines=False
     )
     if start_points is None:
-        stream_kwargs['density'] = 1.2
+        stream_kwargs['density'] = streamline_density
     else:
         stream_kwargs['start_points'] = start_points
 

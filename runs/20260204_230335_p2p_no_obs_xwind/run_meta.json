@@ -1,0 +1,33 @@
+{
+  "start_time": "2026-02-04 23:03:35",
+  "route": "B",
+  "device_arg": "auto",
+  "seed": 42,
+  "config_path": "paperconfig/p2p_no_obs_xwind.yaml",
+  "argv": [
+    "scripts/train.py",
+    "--config",
+    "paperconfig/p2p_no_obs_xwind.yaml",
+    "--route",
+    "B",
+    "--device",
+    "auto",
+    "--no-viz",
+    "--paraview-resolution",
+    "100",
+    "100",
+    "50",
+    "--paraview-batch-size",
+    "50000"
+  ],
+  "status": "success",
+  "exp_name": "p2p_no_obs_xwind",
+  "output_dir": "runs/20260204_230335_p2p_no_obs_xwind",
+  "log_file": "runs/20260204_230335_p2p_no_obs_xwind/training.log",
+  "physics_checks": "passed",
+  "paraview_export": "disabled",
+  "visualization": "disabled",
+  "end_time": "2026-02-04 23:08:25",
+  "duration_seconds": 290.486312,
+  "exit_code": 0
+}

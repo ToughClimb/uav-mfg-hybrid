@@ -8,6 +8,9 @@ from matplotlib.colors import PowerNorm
 from pathlib import Path
 from typing import Optional
 
+from .streamlines import plot_streamlines_2d
+from .streamlines_u import plot_velocity_streamlines_2d
+
 
 class Visualizer:
     """Plot φ/ρ/velocity fields and diagnostics."""
@@ -492,6 +495,37 @@ class Visualizer:
         
         self.plot_phi_slices()
         self.plot_rho_slices()
+
+        viz_cfg = self.config.get('viz', {})
+        enable_streamlines = bool(viz_cfg.get('enable_streamlines', True))
+        enable_u_streamlines = bool(viz_cfg.get('enable_u_streamlines', True))
+        z_slices = viz_cfg.get('z_slices', [5, 15, 25, 35])
+        if z_slices is None:
+            z_slices = [5, 15, 25, 35]
+
+        if enable_streamlines or enable_u_streamlines:
+            print(f"\nGenerating streamline plots at z={z_slices}...")
+            for z in z_slices:
+                if enable_streamlines:
+                    try:
+                        plot_streamlines_2d(
+                            checkpoint=self.checkpoint,
+                            config=self.config,
+                            objects=self.objects,
+                            phi_model=self.phi_model,
+                            output_dir=self.output_dir,
+                            z_slice=float(z)
+                        )
+                    except Exception as e:
+                        print(f"  ⚠️  streamlines_z{int(float(z))} failed: {e}")
+                if enable_u_streamlines:
+                    try:
+                        plot_velocity_streamlines_2d(
+                            checkpoint_path=str(self.checkpoint_path),
+                            z_slice=float(z)
+                        )
+                    except Exception as e:
+                        print(f"  ⚠️  streamlines_u_z{int(float(z))} failed: {e}")
         
         print("\n" + "="*70)
         print(f"✅ All plots saved to: {self.output_dir}")

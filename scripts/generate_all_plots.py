@@ -35,10 +35,11 @@ def generate_all_plots(
     output_dir = Path(checkpoint_path).parent.parent / 'plots'
     output_dir.mkdir(exist_ok=True)
 
-    print("\n[1/2] Generating 2D slices...")
+    print("\n[1/2] Generating field plots...")
     viz = Visualizer(checkpoint_path=checkpoint_path, config=config, objects=objects)
-    viz.plot_phi_slices(z_slices=z_slices_full)
-    viz.plot_rho_slices(z_slices=z_slices_full, use_interpolation=True)
+    config.setdefault('viz', {})
+    config['viz'].setdefault('z_slices', z_slices_full)
+    viz.generate_all_plots()
 
     print("\n[2/2] Generating training curves...")
     run_dir = Path(checkpoint_path).parent.parent
@@ -53,6 +54,9 @@ def generate_all_plots(
     print(f"   2D Field Slices (each height separate):")
     print(f"     - phi_z5/7/10/15/25/35.pdf/png (6 files)")
     print(f"     - rho_z5/7/10/15/25/35_interp.pdf/png (6 files)")
+    print(f"   Streamlines:")
+    print(f"     - streamlines_z5/7/10/15/25/35.pdf/png (6 files)")
+    print(f"     - streamlines_u_z5/7/10/15/25/35.pdf/png (6 files)")
     print(f"   Training Curves:")
     print(f"     - training_loss.pdf/png")
     print(f"     - training_residual.pdf/png")

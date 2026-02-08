@@ -1,0 +1,33 @@
+{
+  "start_time": "2026-02-04 22:56:01",
+  "route": "B",
+  "device_arg": "auto",
+  "seed": 42,
+  "config_path": "paperconfig/p2p_no_obs_vortex.yaml",
+  "argv": [
+    "scripts/train.py",
+    "--config",
+    "paperconfig/p2p_no_obs_vortex.yaml",
+    "--route",
+    "B",
+    "--device",
+    "auto",
+    "--no-viz",
+    "--paraview-resolution",
+    "100",
+    "100",
+    "50",
+    "--paraview-batch-size",
+    "50000"
+  ],
+  "status": "success",
+  "exp_name": "p2p_no_obs_vortex",
+  "output_dir": "runs/20260204_225601_p2p_no_obs_vortex",
+  "log_file": "runs/20260204_225601_p2p_no_obs_vortex/training.log",
+  "physics_checks": "passed",
+  "paraview_export": "disabled",
+  "visualization": "disabled",
+  "end_time": "2026-02-04 23:01:14",
+  "duration_seconds": 312.839155,
+  "exit_code": 0
+}

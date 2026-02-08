@@ -1,0 +1,33 @@
+{
+  "start_time": "2026-02-04 23:35:41",
+  "route": "B",
+  "device_arg": "auto",
+  "seed": 42,
+  "config_path": "paperconfig/homing_1obs_xwind.yaml",
+  "argv": [
+    "scripts/train.py",
+    "--config",
+    "paperconfig/homing_1obs_xwind.yaml",
+    "--route",
+    "B",
+    "--device",
+    "auto",
+    "--no-viz",
+    "--paraview-resolution",
+    "100",
+    "100",
+    "50",
+    "--paraview-batch-size",
+    "50000"
+  ],
+  "status": "success",
+  "exp_name": "homing_1obs_xwind",
+  "output_dir": "runs/20260204_233541_homing_1obs_xwind",
+  "log_file": "runs/20260204_233541_homing_1obs_xwind/training.log",
+  "physics_checks": "passed",
+  "paraview_export": "disabled",
+  "visualization": "disabled",
+  "end_time": "2026-02-04 23:41:07",
+  "duration_seconds": 325.970744,
+  "exit_code": 0
+}
