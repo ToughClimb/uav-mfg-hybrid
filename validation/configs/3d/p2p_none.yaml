@@ -1,0 +1,111 @@
+provenance:
+  manuscript: Final ESWA-D-26-05581R1 revised manuscript (not distributed)
+  submission: ESWA-D-26-05581R1
+  geometry: reconstructed from figure axes and visible projected geometry; not exact
+    original YAML
+  coefficients: unreported source strengths and wind constants are explicit assumptions
+  numerical_enhancement: graph initialization and one-sided short-step Bellman inequality
+    for branch selection; not stated in manuscript
+  source_strength: user-requested higher demand; 10 times the accepted low-load 3D
+    source
+  density_upper_bound: 0.25 replaces the reconstruction-specific 0.05 projection bound;
+    rho_jam, speed closure, wind and geometry remain unchanged
+  manuscript_sha256: 95f1441f2b34eb497258f98c794c4d7e134f4f4556300fae42ad872c2fbf6ccc
+domain:
+- - 0
+  - 100
+- - 0
+  - 100
+- - 0
+  - 30
+target:
+  type: sphere
+  center:
+  - 90
+  - 90
+  - 15
+  radius: 10
+source:
+  type: sphere
+  center:
+  - 10
+  - 10
+  - 15
+  radius: 10
+  rate: 0.01
+obstacles: []
+wind:
+  type: none
+physics:
+  v_free: 20
+  v_min: 12
+  controllability_margin: 1
+  rho_jam: 0.25
+  rho_max: 0.25
+  beta: 5.0
+  clip_speed: false
+barrier:
+  height: 0.08
+  steepness: 0.05
+  buffer: 2.0
+  power: 1
+network:
+  widths:
+  - 64
+  - 128
+  - 128
+  - 64
+training:
+  learning_rate: 0.001
+  epsilon: 0.0001
+  pde_points: 5000
+  boundary_points: 1000
+  initial_epochs: 1800
+  subsequent_epochs: 200
+  causality_weight: 1.0
+  causality_step: 1.0
+  causality_points: 256
+  initialization: graph_pretrain
+  pretrain_epochs: 1800
+  value_mean_tolerance: 0.02
+  value_p95_tolerance: 0.12
+transport:
+  max_steps: 10000
+  change_tolerance: 1.0e-06
+  residual_tolerance: 0.0001
+  balance_tolerance: 0.001
+  cfl: 0.8
+  method: explicit
+  backend: cuda
+  graph_steps: 100
+coupling:
+  alpha: 0.1
+  max_iterations: 160
+  tolerance: 0.001
+  continuity_tolerance: 0.001
+profiles:
+  demo:
+    grid: &id001
+    - 40
+    - 40
+    - 16
+  diagnostic:
+    grid:
+    - 20
+    - 20
+    - 8
+  paper:
+    grid:
+    - 100
+    - 100
+    - 50
+cases:
+- p2p_none
+- p2p_obstacle
+- p2p_height_obstacle
+homing_rate: 1.0e-05
+cpu_threads: 8
+name: p2p_none
+profile: demo
+grid: *id001
+seed: 42

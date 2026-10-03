@@ -1,0 +1,21 @@
+extends: paper_figures_verified.yaml
+source: {rate: 0.018}
+homing_rate: 0.0003
+physics:
+  rho_max: 0.25
+provenance:
+  source_strength: user-requested higher demand; all 2D source rates are 3 times the accepted low-load cases
+  density_upper_bound: 0.25 replaces the reconstruction-specific 0.05 projection bound; rho_jam, speed closure, wind and geometry remain unchanged
+  grid: 100x100 XY reduction, not the manuscript's 100x100x50 3D main grid
+coupling:
+  alpha: 0.1
+  max_iterations: 160
+training:
+  subsequent_epochs: 200
+cases:
+  - p2p_vortex_obstacle
+  - p2p_none
+  - p2p_vortex
+  - homing_none
+  - homing_uniform
+  - homing_uniform_obstacle

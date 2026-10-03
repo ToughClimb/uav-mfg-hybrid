@@ -1,0 +1,6 @@
+extends: high_density_2d.yaml
+homing_rate: 0.0002
+provenance:
+  source_strength: obstacle homing demand is twice the accepted low-load run; the separate threefold trial exceeded the 0.25 operational density bound
+cases:
+  - homing_uniform_obstacle

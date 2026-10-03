@@ -1,0 +1,54 @@
+# Values explicitly stated in the final ESWA manuscript are marked "paper".
+# Remaining geometry and coefficient values are declared reconstruction choices.
+provenance:
+  manuscript: final revised ESWA-D-26-05581R1 manuscript; private source not distributed
+  manuscript_sha256: 95f1441f2b34eb497258f98c794c4d7e134f4f4556300fae42ad872c2fbf6ccc
+  submission: ESWA-D-26-05581R1
+  geometry: reconstructed from figure axes and visible projected geometry; not exact original YAML
+  coefficients: unreported source strengths and wind constants are explicit assumptions
+domain: [[0, 100], [0, 100], [0, 30]]
+target: {type: sphere, center: [90, 90, 15], radius: 10}
+source: {type: sphere, center: [10, 10, 15], radius: 10, rate: 0.01}
+obstacles: []
+wind: {type: none}
+physics:
+  v_free: 20
+  v_min: 12
+  controllability_margin: 1
+  rho_jam: 0.25
+  rho_max: 0.05
+  beta: 5.0                 # paper
+  clip_speed: false
+barrier: {height: 0.08, steepness: 0.05, buffer: 2.0, power: 1} # paper
+network: {widths: [64, 128, 128, 64]}  # paper
+training:
+  learning_rate: 0.001      # paper
+  epsilon: 0.0001           # paper
+  pde_points: 5000          # paper
+  boundary_points: 1000     # paper; interior wall-shell PDE sampling in hybrid
+  initial_epochs: 800       # reconstruction budget; not specified in final text
+  subsequent_epochs: 40
+transport:
+  max_steps: 10000          # paper
+  change_tolerance: 0.000001 # paper
+  residual_tolerance: 0.0001 # additional stationarity gate
+  balance_tolerance: 0.001
+  cfl: 0.8                 # reconstruction choice, consistent positivity condition
+  method: explicit
+coupling:
+  alpha: 0.2               # paper
+  max_iterations: 50        # paper
+  tolerance: 0.001          # paper
+profiles:
+  demo: {grid: [40, 40, 16]}
+  diagnostic: {grid: [20, 20, 8]} # paper's 3D diagnostic grid
+  paper: {grid: [100, 100, 50]}   # paper's main grid
+cases:
+  - homing_none
+  - homing_uniform
+  - homing_uniform_obstacle
+  - p2p_none
+  - p2p_vortex
+  - p2p_vortex_obstacle
+  - p2p_obstacle
+  - p2p_height_obstacle

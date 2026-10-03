@@ -1,0 +1,14 @@
+include AGENTS.md LICENSE NOTICE README.md README_zh.md uv.lock
+recursive-include configs *.yaml
+recursive-include docs *.md
+recursive-include scripts *.py
+recursive-include validation *.json *.md *.yaml *.png
+exclude scripts/archive_legacy.py
+prune archive
+prune reference
+prune results
+prune .publish
+prune .venv
+prune build
+prune dist
+global-exclude __pycache__ *.py[cod]

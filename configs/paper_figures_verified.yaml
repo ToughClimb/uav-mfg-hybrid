@@ -1,0 +1,8 @@
+extends: paper_figures_2d.yaml
+source: {rate: 0.006}
+provenance:
+  source_strength: 0.006 is an explicit moderate-load reconstruction choice; the separate 0.01 trial hit rho_max and failed mass/continuity checks
+cases:
+  - p2p_none
+  - p2p_vortex
+  - p2p_vortex_obstacle

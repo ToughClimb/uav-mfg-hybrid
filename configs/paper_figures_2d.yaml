@@ -1,0 +1,26 @@
+extends: verified_demo.yaml
+spatial_dimension: 2
+domain: [[0, 100], [0, 100], [4.5, 5.5]]
+target: {type: disk, center: [90, 90, 5], radius: 10}
+source: {type: disk, center: [10, 10, 5], radius: 10, rate: 0.01}
+homing_rate: 0.0001
+provenance:
+  dimensionality: explicit XY reduction, unit-depth layer at z=5; manuscript reports 2D obstacle/wind diagnostics and main figures marked z=5
+  source_strength: 0.01 is the original reconstruction assumption, ten times the low-load 3D verification source; not a recovered paper constant
+  geometry: XY disk source and target reconstructed from figure markings; these are not slices through the previous 3D spheres
+profiles:
+  demo: {grid: [40, 40, 1]}
+  diagnostic: {grid: [20, 20, 1]}
+  paper: {grid: [100, 100, 1]}
+coupling:
+  max_iterations: 80
+training:
+  causality_step: 1.0
+  subsequent_epochs: 100
+cases:
+  - homing_none
+  - homing_uniform
+  - homing_uniform_obstacle
+  - p2p_none
+  - p2p_vortex
+  - p2p_vortex_obstacle

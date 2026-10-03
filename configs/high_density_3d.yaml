@@ -1,0 +1,17 @@
+extends: verified_demo.yaml
+source: {rate: 0.01}
+physics:
+  rho_max: 0.25
+provenance:
+  source_strength: user-requested higher demand; 10 times the accepted low-load 3D source
+  density_upper_bound: 0.25 replaces the reconstruction-specific 0.05 projection bound; rho_jam, speed closure, wind and geometry remain unchanged
+coupling:
+  alpha: 0.1
+  max_iterations: 160
+training:
+  causality_step: 1.0
+  subsequent_epochs: 200
+cases:
+  - p2p_none
+  - p2p_obstacle
+  - p2p_height_obstacle

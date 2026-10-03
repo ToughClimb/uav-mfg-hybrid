@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-04",
+  "gpu_enabled_tests": {
+    "passed": 25,
+    "skipped": 0
+  },
+  "isolated_checkout_cpu_tests": {
+    "passed": 24,
+    "skipped": 1,
+    "skip_reason": "CUDA-specific agreement test; GPU hidden for CPU CI simulation"
+  },
+  "isolated_checkout": {
+    "private_manuscript_present": false,
+    "locked_environment_install": "passed",
+    "optional_OpenMP_kernel_build": "passed",
+    "installed_cli_entrypoint": "passed"
+  },
+  "distribution_checks": {
+    "wheel": "passed",
+    "source_distribution": "passed",
+    "native_kernel_source_included": true,
+    "configs_and_reproduction_scripts_in_source_distribution": true,
+    "private_material_excluded": true
+  },
+  "private_reference_free_render": {
+    "accepted_cases": 9,
+    "numerical_fields_hashed_before_and_after": 20,
+    "reference_comparison_enabled": false,
+    "local_asset_links_validated": 27,
+    "unreplaced_template_markers": 0
+  },
+  "current_source_sha256": {
+    "src/uav_mfg/baselines.py": "27e4a8f6a86cb06212209e9d7ae81be6e1be7358c3f409a250baa4a2576ed6f4",
+    "src/uav_mfg/initialization.py": "b81f0acf943e296cd2c7e8e25e1689caa49ef32a8abb617d56d274fe45580107",
+    "src/uav_mfg/__init__.py": "13922c24d63bd2ccdf62ac7e9fd2c4004854f82eb7dd4df0025206cd0ecc9843",
+    "src/uav_mfg/paper_plots.py": "f9c1ca24ef6b614f9efd76b3e4f6b0b9be8b157c654514923e42b08be5c640c6",
+    "src/uav_mfg/transport.py": "1195dc7acda426479b9759757f724b06ae92ddd3b3fad9a04623067242a232a1",
+    "src/uav_mfg/problem.py": "9f24c67c45151ed3a22823a4927e52004f1dfbe3f70647ab0fa428840f2fd317",
+    "src/uav_mfg/fsm_kernel.cpp": "0a4a3768ee4fba1c6ab1f51ca3a7a5a2d431e45958b64d98bac639adf4eea3e1",
+    "src/uav_mfg/reference.py": "806c147c1fb6f91afb4fe3ae7211b0c66776db6dbba94feb633ca20d0de797b5",
+    "src/uav_mfg/experiment.py": "69dbdb8b0695e449a1220df40e3613f9e2c233b2ebace53388301046b27dc9e4",
+    "src/uav_mfg/plots.py": "dc4685f04ad86e1322fa7f804ffe748883dde1a445ec7e7e94f65b5efb2d3bdd",
+    "src/uav_mfg/value.py": "4a0b05dd40a118eef294687cd7836a503f70a216ca33bcaf15da0595a03898cf",
+    "src/uav_mfg/cli.py": "d8a3bfd2809543b12b7e12dcc17f3731afad38796b72f68742d35c9464ae5265"
+  },
+  "ci": "Completed local checks; no GitHub workflow published because the existing OAuth credential lacks workflow scope."
+}

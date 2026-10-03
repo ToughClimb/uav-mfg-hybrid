@@ -1,0 +1,1136 @@
+{
+  "schema_version": 1,
+  "validation_date": "2026-10-04",
+  "kind": "Measured independent reconstruction; not original manuscript experiments",
+  "scientific_source": {
+    "submission": "ESWA-D-26-05581R1",
+    "journal": "Expert Systems with Applications",
+    "manuscript_sha256": "95f1441f2b34eb497258f98c794c4d7e134f4f4556300fae42ad872c2fbf6ccc"
+  },
+  "accepted_cases": [
+    {
+      "case": "homing_none",
+      "status": "converged",
+      "passed": true,
+      "fresh_flux_audit": {
+        "source_rate": 2.9759999999999995,
+        "target_absorption": 2.9749051503686195,
+        "absorption_over_source": 0.999632106978703,
+        "relative_steady_balance": 0.000367893021297066,
+        "outer_leakage": 0.0,
+        "obstacle_leakage": 0.0,
+        "pde_relative_residual": 0.0009192614255177432,
+        "total_mass": 5.357161289580597,
+        "rho_max": 0.011680894144822544,
+        "rho_min": 1.0661339007954018e-05
+      },
+      "saved_audit_max_difference": 0.0,
+      "eikonal_mean": 0.0021444472949951887,
+      "eikonal_p95": 0.007117456290870905,
+      "source_strength": 0.0003,
+      "spatial_dimension": 2,
+      "grid": [
+        100,
+        100,
+        1
+      ],
+      "fields_sha256": "f60c3a11cdbe44ab155b913197deb6697dd8ae008b92fdcad976bf10f21e0a94",
+      "resolved_configuration": "configs/2d/homing_none.yaml",
+      "seed": 42,
+      "profile": "paper",
+      "total_outer_iterations": 78,
+      "cumulative_projection_mass_removed": 0.0,
+      "generating_source_sha256": {
+        "src/uav_mfg/__init__.py": "13922c24d63bd2ccdf62ac7e9fd2c4004854f82eb7dd4df0025206cd0ecc9843",
+        "src/uav_mfg/baselines.py": "27e4a8f6a86cb06212209e9d7ae81be6e1be7358c3f409a250baa4a2576ed6f4",
+        "src/uav_mfg/cli.py": "319af77a8d95e5524040330061e0e7524f4836fe6e15c7125d5cda226c896105",
+        "src/uav_mfg/experiment.py": "91d468e39bde51db52dce740614ecfe8355017f4c493d7174d3aca6a1dd326e3",
+        "src/uav_mfg/fsm_kernel.cpp": "0a4a3768ee4fba1c6ab1f51ca3a7a5a2d431e45958b64d98bac639adf4eea3e1",
+        "src/uav_mfg/initialization.py": "b81f0acf943e296cd2c7e8e25e1689caa49ef32a8abb617d56d274fe45580107",
+        "src/uav_mfg/paper_plots.py": "93bb17e49cff048645e517df3adea51a5f5ea046086f1e6c1104b35adba2fc34",
+        "src/uav_mfg/plots.py": "dc4685f04ad86e1322fa7f804ffe748883dde1a445ec7e7e94f65b5efb2d3bdd",
+        "src/uav_mfg/problem.py": "9f24c67c45151ed3a22823a4927e52004f1dfbe3f70647ab0fa428840f2fd317",
+        "src/uav_mfg/reference.py": "806c147c1fb6f91afb4fe3ae7211b0c66776db6dbba94feb633ca20d0de797b5",
+        "src/uav_mfg/transport.py": "1195dc7acda426479b9759757f724b06ae92ddd3b3fad9a04623067242a232a1",
+        "src/uav_mfg/value.py": "4a0b05dd40a118eef294687cd7836a503f70a216ca33bcaf15da0595a03898cf"
+      },
+      "generating_environment": {
+        "python": "3.12.13",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.5.3",
+        "scipy": "1.18.1",
+        "matplotlib": "3.11.2",
+        "cuda_runtime": "13.0",
+        "gpu": "NVIDIA GeForce RTX 5070 Ti"
+      },
+      "same_parameter_continuation": false
+    },
+    {
+      "case": "homing_uniform",
+      "status": "converged",
+      "passed": true,
+      "fresh_flux_audit": {
+        "source_rate": 2.9759999999999995,
+        "target_absorption": 2.975967876423178,
+        "absorption_over_source": 0.9999892057873583,
+        "relative_steady_balance": 1.0794212641699105e-05,
+        "outer_leakage": 0.0,
+        "obstacle_leakage": 0.0,
+        "pde_relative_residual": 0.0009918429408034284,
+        "total_mass": 5.718549404150257,
+        "rho_max": 0.047564364165491,
+        "rho_min": 9.15577952390924e-06
+      },
+      "saved_audit_max_difference": 0.0,
+      "eikonal_mean": 0.0024702090304344893,
+      "eikonal_p95": 0.007946816273033619,
+      "source_strength": 0.0003,
+      "spatial_dimension": 2,
+      "grid": [
+        100,
+        100,
+        1
+      ],
+      "fields_sha256": "9f2fa00860d7bfb306292e46f83cadeb0b88e2896af210cf986e6b99dd5f6f87",
+      "resolved_configuration": "configs/2d/homing_uniform.yaml",
+      "seed": 42,
+      "profile": "paper",
+      "total_outer_iterations": 184,
+      "cumulative_projection_mass_removed": 0.0,
+      "generating_source_sha256": {
+        "src/uav_mfg/__init__.py": "13922c24d63bd2ccdf62ac7e9fd2c4004854f82eb7dd4df0025206cd0ecc9843",
+        "src/uav_mfg/baselines.py": "27e4a8f6a86cb06212209e9d7ae81be6e1be7358c3f409a250baa4a2576ed6f4",
+        "src/uav_mfg/cli.py": "319af77a8d95e5524040330061e0e7524f4836fe6e15c7125d5cda226c896105",
+        "src/uav_mfg/experiment.py": "91d468e39bde51db52dce740614ecfe8355017f4c493d7174d3aca6a1dd326e3",
+        "src/uav_mfg/fsm_kernel.cpp": "0a4a3768ee4fba1c6ab1f51ca3a7a5a2d431e45958b64d98bac639adf4eea3e1",
+        "src/uav_mfg/initialization.py": "b81f0acf943e296cd2c7e8e25e1689caa49ef32a8abb617d56d274fe45580107",
+        "src/uav_mfg/paper_plots.py": "a144aedd3f7276a714b0e017269bc68969a7e2de76a00666e781515345c1eb59",
+        "src/uav_mfg/plots.py": "dc4685f04ad86e1322fa7f804ffe748883dde1a445ec7e7e94f65b5efb2d3bdd",
+        "src/uav_mfg/problem.py": "9f24c67c45151ed3a22823a4927e52004f1dfbe3f70647ab0fa428840f2fd317",
+        "src/uav_mfg/reference.py": "806c147c1fb6f91afb4fe3ae7211b0c66776db6dbba94feb633ca20d0de797b5",
+        "src/uav_mfg/transport.py": "1195dc7acda426479b9759757f724b06ae92ddd3b3fad9a04623067242a232a1",
+        "src/uav_mfg/value.py": "4a0b05dd40a118eef294687cd7836a503f70a216ca33bcaf15da0595a03898cf"
+      },
+      "generating_environment": {
+        "python": "3.12.13",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.5.3",
+        "scipy": "1.18.1",
+        "matplotlib": "3.11.2",
+        "cuda_runtime": "13.0",
+        "gpu": "NVIDIA GeForce RTX 5070 Ti"
+      },
+      "same_parameter_continuation": true
+    },
+    {
+      "case": "homing_uniform_obstacle",
+      "status": "converged",
+      "passed": true,
+      "fresh_flux_audit": {
+        "source_rate": 1.9640000000000006,
+        "target_absorption": 1.9639769997782814,
+        "absorption_over_source": 0.999988289092811,
+        "relative_steady_balance": 1.1710907188998877e-05,
+        "outer_leakage": 0.0,
+        "obstacle_leakage": 0.0,
+        "pde_relative_residual": 0.0009488712245303512,
+        "total_mass": 3.9333171079989446,
+        "rho_max": 0.16482799814407573,
+        "rho_min": 6.10878339403036e-06
+      },
+      "saved_audit_max_difference": 0.0,
+      "eikonal_mean": 0.005984466057270765,
+      "eikonal_p95": 0.013759657740592957,
+      "source_strength": 0.0002,
+      "spatial_dimension": 2,
+      "grid": [
+        100,
+        100,
+        1
+      ],
+      "fields_sha256": "d8c99954607368a3f894bc3b0f88582d36ce8482d67d71b0b741d7f3e93107ac",
+      "resolved_configuration": "configs/2d/homing_uniform_obstacle.yaml",
+      "seed": 42,
+      "profile": "paper",
+      "total_outer_iterations": 196,
+      "cumulative_projection_mass_removed": 0.0,
+      "generating_source_sha256": {
+        "src/uav_mfg/__init__.py": "13922c24d63bd2ccdf62ac7e9fd2c4004854f82eb7dd4df0025206cd0ecc9843",
+        "src/uav_mfg/baselines.py": "27e4a8f6a86cb06212209e9d7ae81be6e1be7358c3f409a250baa4a2576ed6f4",
+        "src/uav_mfg/cli.py": "319af77a8d95e5524040330061e0e7524f4836fe6e15c7125d5cda226c896105",
+        "src/uav_mfg/experiment.py": "91d468e39bde51db52dce740614ecfe8355017f4c493d7174d3aca6a1dd326e3",
+        "src/uav_mfg/fsm_kernel.cpp": "0a4a3768ee4fba1c6ab1f51ca3a7a5a2d431e45958b64d98bac639adf4eea3e1",
+        "src/uav_mfg/initialization.py": "b81f0acf943e296cd2c7e8e25e1689caa49ef32a8abb617d56d274fe45580107",
+        "src/uav_mfg/paper_plots.py": "f9c1ca24ef6b614f9efd76b3e4f6b0b9be8b157c654514923e42b08be5c640c6",
+        "src/uav_mfg/plots.py": "dc4685f04ad86e1322fa7f804ffe748883dde1a445ec7e7e94f65b5efb2d3bdd",
+        "src/uav_mfg/problem.py": "9f24c67c45151ed3a22823a4927e52004f1dfbe3f70647ab0fa428840f2fd317",
+        "src/uav_mfg/reference.py": "806c147c1fb6f91afb4fe3ae7211b0c66776db6dbba94feb633ca20d0de797b5",
+        "src/uav_mfg/transport.py": "1195dc7acda426479b9759757f724b06ae92ddd3b3fad9a04623067242a232a1",
+        "src/uav_mfg/value.py": "4a0b05dd40a118eef294687cd7836a503f70a216ca33bcaf15da0595a03898cf"
+      },
+      "generating_environment": {
+        "python": "3.12.13",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.5.3",
+        "scipy": "1.18.1",
+        "matplotlib": "3.11.2",
+        "cuda_runtime": "13.0",
+        "gpu": "NVIDIA GeForce RTX 5070 Ti"
+      },
+      "same_parameter_continuation": true
+    },
+    {
+      "case": "p2p_none",
+      "status": "converged",
+      "passed": true,
+      "fresh_flux_audit": {
+        "source_rate": 5.688,
+        "target_absorption": 5.687081737218864,
+        "absorption_over_source": 0.9998385613957216,
+        "relative_steady_balance": 0.0001614386042784699,
+        "outer_leakage": 0.0,
+        "obstacle_leakage": 0.0,
+        "pde_relative_residual": 0.0009545514905067469,
+        "total_mass": 32.86167764636197,
+        "rho_max": 0.1373139075271949,
+        "rho_min": 0.0
+      },
+      "saved_audit_max_difference": 0.0,
+      "eikonal_mean": 0.014001081697642803,
+      "eikonal_p95": 0.08440950512886047,
+      "source_strength": 0.018,
+      "spatial_dimension": 2,
+      "grid": [
+        100,
+        100,
+        1
+      ],
+      "fields_sha256": "0c87a7350ce55720bcb2bfc27c23faad2e27a522b65d9e6adce30cc098e4b505",
+      "resolved_configuration": "configs/2d/p2p_none.yaml",
+      "seed": 42,
+      "profile": "paper",
+      "total_outer_iterations": 106,
+      "cumulative_projection_mass_removed": 0.0,
+      "generating_source_sha256": {
+        "src/uav_mfg/__init__.py": "13922c24d63bd2ccdf62ac7e9fd2c4004854f82eb7dd4df0025206cd0ecc9843",
+        "src/uav_mfg/baselines.py": "27e4a8f6a86cb06212209e9d7ae81be6e1be7358c3f409a250baa4a2576ed6f4",
+        "src/uav_mfg/cli.py": "319af77a8d95e5524040330061e0e7524f4836fe6e15c7125d5cda226c896105",
+        "src/uav_mfg/experiment.py": "91d468e39bde51db52dce740614ecfe8355017f4c493d7174d3aca6a1dd326e3",
+        "src/uav_mfg/fsm_kernel.cpp": "0a4a3768ee4fba1c6ab1f51ca3a7a5a2d431e45958b64d98bac639adf4eea3e1",
+        "src/uav_mfg/initialization.py": "b81f0acf943e296cd2c7e8e25e1689caa49ef32a8abb617d56d274fe45580107",
+        "src/uav_mfg/paper_plots.py": "4083bf92121202cb1a4a8729c9b43085a43ad17207a282c2d4a0a6a2153f22e4",
+        "src/uav_mfg/plots.py": "dc4685f04ad86e1322fa7f804ffe748883dde1a445ec7e7e94f65b5efb2d3bdd",
+        "src/uav_mfg/problem.py": "9f24c67c45151ed3a22823a4927e52004f1dfbe3f70647ab0fa428840f2fd317",
+        "src/uav_mfg/reference.py": "806c147c1fb6f91afb4fe3ae7211b0c66776db6dbba94feb633ca20d0de797b5",
+        "src/uav_mfg/transport.py": "1195dc7acda426479b9759757f724b06ae92ddd3b3fad9a04623067242a232a1",
+        "src/uav_mfg/value.py": "4a0b05dd40a118eef294687cd7836a503f70a216ca33bcaf15da0595a03898cf"
+      },
+      "generating_environment": {
+        "python": "3.12.13",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.5.3",
+        "scipy": "1.18.1",
+        "matplotlib": "3.11.2",
+        "cuda_runtime": "13.0",
+        "gpu": "NVIDIA GeForce RTX 5070 Ti"
+      },
+      "same_parameter_continuation": false
+    },
+    {
+      "case": "p2p_vortex",
+      "status": "converged",
+      "passed": true,
+      "fresh_flux_audit": {
+        "source_rate": 5.688,
+        "target_absorption": 5.687242293840047,
+        "absorption_over_source": 0.9998667886497973,
+        "relative_steady_balance": 0.00013321135020268168,
+        "outer_leakage": 0.0,
+        "obstacle_leakage": 0.0,
+        "pde_relative_residual": 0.0009666410441292466,
+        "total_mass": 31.497058660345353,
+        "rho_max": 0.1566462519323811,
+        "rho_min": 0.0
+      },
+      "saved_audit_max_difference": 0.0,
+      "eikonal_mean": 0.012424901127815247,
+      "eikonal_p95": 0.07688108086585999,
+      "source_strength": 0.018,
+      "spatial_dimension": 2,
+      "grid": [
+        100,
+        100,
+        1
+      ],
+      "fields_sha256": "f29b5a3f23e8dd0261ac153d5c94dc96074ec49ae1ca6fa4dc42b04ef0cd0f6c",
+      "resolved_configuration": "configs/2d/p2p_vortex.yaml",
+      "seed": 42,
+      "profile": "paper",
+      "total_outer_iterations": 133,
+      "cumulative_projection_mass_removed": 0.0,
+      "generating_source_sha256": {
+        "src/uav_mfg/__init__.py": "13922c24d63bd2ccdf62ac7e9fd2c4004854f82eb7dd4df0025206cd0ecc9843",
+        "src/uav_mfg/baselines.py": "27e4a8f6a86cb06212209e9d7ae81be6e1be7358c3f409a250baa4a2576ed6f4",
+        "src/uav_mfg/cli.py": "319af77a8d95e5524040330061e0e7524f4836fe6e15c7125d5cda226c896105",
+        "src/uav_mfg/experiment.py": "91d468e39bde51db52dce740614ecfe8355017f4c493d7174d3aca6a1dd326e3",
+        "src/uav_mfg/fsm_kernel.cpp": "0a4a3768ee4fba1c6ab1f51ca3a7a5a2d431e45958b64d98bac639adf4eea3e1",
+        "src/uav_mfg/initialization.py": "b81f0acf943e296cd2c7e8e25e1689caa49ef32a8abb617d56d274fe45580107",
+        "src/uav_mfg/paper_plots.py": "4083bf92121202cb1a4a8729c9b43085a43ad17207a282c2d4a0a6a2153f22e4",
+        "src/uav_mfg/plots.py": "dc4685f04ad86e1322fa7f804ffe748883dde1a445ec7e7e94f65b5efb2d3bdd",
+        "src/uav_mfg/problem.py": "9f24c67c45151ed3a22823a4927e52004f1dfbe3f70647ab0fa428840f2fd317",
+        "src/uav_mfg/reference.py": "806c147c1fb6f91afb4fe3ae7211b0c66776db6dbba94feb633ca20d0de797b5",
+        "src/uav_mfg/transport.py": "1195dc7acda426479b9759757f724b06ae92ddd3b3fad9a04623067242a232a1",
+        "src/uav_mfg/value.py": "4a0b05dd40a118eef294687cd7836a503f70a216ca33bcaf15da0595a03898cf"
+      },
+      "generating_environment": {
+        "python": "3.12.13",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.5.3",
+        "scipy": "1.18.1",
+        "matplotlib": "3.11.2",
+        "cuda_runtime": "13.0",
+        "gpu": "NVIDIA GeForce RTX 5070 Ti"
+      },
+      "same_parameter_continuation": false
+    },
+    {
+      "case": "p2p_vortex_obstacle",
+      "status": "converged",
+      "passed": true,
+      "fresh_flux_audit": {
+        "source_rate": 5.688,
+        "target_absorption": 5.6876714943691375,
+        "absorption_over_source": 0.9999422458454884,
+        "relative_steady_balance": 5.77541545116341e-05,
+        "outer_leakage": 0.0,
+        "obstacle_leakage": 0.0,
+        "pde_relative_residual": 0.000958884246957548,
+        "total_mass": 31.36386697650863,
+        "rho_max": 0.08393139207878865,
+        "rho_min": 0.0
+      },
+      "saved_audit_max_difference": 0.0,
+      "eikonal_mean": 0.017995478585362434,
+      "eikonal_p95": 0.0797634869813919,
+      "source_strength": 0.018,
+      "spatial_dimension": 2,
+      "grid": [
+        100,
+        100,
+        1
+      ],
+      "fields_sha256": "0e18ed19dcf6a2aaaaa93507890c11750412f333be4c8b3cb1c2d791b6d8b630",
+      "resolved_configuration": "configs/2d/p2p_vortex_obstacle.yaml",
+      "seed": 42,
+      "profile": "paper",
+      "total_outer_iterations": 110,
+      "cumulative_projection_mass_removed": 0.0,
+      "generating_source_sha256": {
+        "src/uav_mfg/__init__.py": "13922c24d63bd2ccdf62ac7e9fd2c4004854f82eb7dd4df0025206cd0ecc9843",
+        "src/uav_mfg/baselines.py": "27e4a8f6a86cb06212209e9d7ae81be6e1be7358c3f409a250baa4a2576ed6f4",
+        "src/uav_mfg/cli.py": "319af77a8d95e5524040330061e0e7524f4836fe6e15c7125d5cda226c896105",
+        "src/uav_mfg/experiment.py": "91d468e39bde51db52dce740614ecfe8355017f4c493d7174d3aca6a1dd326e3",
+        "src/uav_mfg/fsm_kernel.cpp": "0a4a3768ee4fba1c6ab1f51ca3a7a5a2d431e45958b64d98bac639adf4eea3e1",
+        "src/uav_mfg/initialization.py": "b81f0acf943e296cd2c7e8e25e1689caa49ef32a8abb617d56d274fe45580107",
+        "src/uav_mfg/paper_plots.py": "4083bf92121202cb1a4a8729c9b43085a43ad17207a282c2d4a0a6a2153f22e4",
+        "src/uav_mfg/plots.py": "dc4685f04ad86e1322fa7f804ffe748883dde1a445ec7e7e94f65b5efb2d3bdd",
+        "src/uav_mfg/problem.py": "9f24c67c45151ed3a22823a4927e52004f1dfbe3f70647ab0fa428840f2fd317",
+        "src/uav_mfg/reference.py": "806c147c1fb6f91afb4fe3ae7211b0c66776db6dbba94feb633ca20d0de797b5",
+        "src/uav_mfg/transport.py": "1195dc7acda426479b9759757f724b06ae92ddd3b3fad9a04623067242a232a1",
+        "src/uav_mfg/value.py": "4a0b05dd40a118eef294687cd7836a503f70a216ca33bcaf15da0595a03898cf"
+      },
+      "generating_environment": {
+        "python": "3.12.13",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.5.3",
+        "scipy": "1.18.1",
+        "matplotlib": "3.11.2",
+        "cuda_runtime": "13.0",
+        "gpu": "NVIDIA GeForce RTX 5070 Ti"
+      },
+      "same_parameter_continuation": false
+    },
+    {
+      "case": "p2p_height_obstacle",
+      "status": "converged",
+      "passed": true,
+      "fresh_flux_audit": {
+        "source_rate": 43.125,
+        "target_absorption": 43.11801917838319,
+        "absorption_over_source": 0.9998381258755523,
+        "relative_steady_balance": 0.00016187412444769903,
+        "outer_leakage": 0.0,
+        "obstacle_leakage": 0.0,
+        "pde_relative_residual": 0.0009538095948278428,
+        "total_mass": 238.90052292114356,
+        "rho_max": 0.1345177523997743,
+        "rho_min": 0.0
+      },
+      "saved_audit_max_difference": 5.421010862427522e-19,
+      "eikonal_mean": 0.016576619818806648,
+      "eikonal_p95": 0.07870456576347351,
+      "source_strength": 0.01,
+      "spatial_dimension": 3,
+      "grid": [
+        40,
+        40,
+        16
+      ],
+      "fields_sha256": "49bdec07fb050f9d5a57a9eaf6dec0f7623b44ac2f5b0198e567c837708a67bf",
+      "resolved_configuration": "configs/3d/p2p_height_obstacle.yaml",
+      "seed": 42,
+      "profile": "demo",
+      "total_outer_iterations": 104,
+      "cumulative_projection_mass_removed": 0.0,
+      "generating_source_sha256": {
+        "src/uav_mfg/__init__.py": "13922c24d63bd2ccdf62ac7e9fd2c4004854f82eb7dd4df0025206cd0ecc9843",
+        "src/uav_mfg/baselines.py": "27e4a8f6a86cb06212209e9d7ae81be6e1be7358c3f409a250baa4a2576ed6f4",
+        "src/uav_mfg/cli.py": "319af77a8d95e5524040330061e0e7524f4836fe6e15c7125d5cda226c896105",
+        "src/uav_mfg/experiment.py": "91d468e39bde51db52dce740614ecfe8355017f4c493d7174d3aca6a1dd326e3",
+        "src/uav_mfg/fsm_kernel.cpp": "0a4a3768ee4fba1c6ab1f51ca3a7a5a2d431e45958b64d98bac639adf4eea3e1",
+        "src/uav_mfg/initialization.py": "b81f0acf943e296cd2c7e8e25e1689caa49ef32a8abb617d56d274fe45580107",
+        "src/uav_mfg/paper_plots.py": "a144aedd3f7276a714b0e017269bc68969a7e2de76a00666e781515345c1eb59",
+        "src/uav_mfg/plots.py": "dc4685f04ad86e1322fa7f804ffe748883dde1a445ec7e7e94f65b5efb2d3bdd",
+        "src/uav_mfg/problem.py": "9f24c67c45151ed3a22823a4927e52004f1dfbe3f70647ab0fa428840f2fd317",
+        "src/uav_mfg/reference.py": "806c147c1fb6f91afb4fe3ae7211b0c66776db6dbba94feb633ca20d0de797b5",
+        "src/uav_mfg/transport.py": "1195dc7acda426479b9759757f724b06ae92ddd3b3fad9a04623067242a232a1",
+        "src/uav_mfg/value.py": "4a0b05dd40a118eef294687cd7836a503f70a216ca33bcaf15da0595a03898cf"
+      },
+      "generating_environment": {
+        "python": "3.12.13",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.5.3",
+        "scipy": "1.18.1",
+        "matplotlib": "3.11.2",
+        "cuda_runtime": "13.0",
+        "gpu": "NVIDIA GeForce RTX 5070 Ti"
+      },
+      "same_parameter_continuation": false
+    },
+    {
+      "case": "p2p_none",
+      "status": "converged",
+      "passed": true,
+      "fresh_flux_audit": {
+        "source_rate": 43.12500000000001,
+        "target_absorption": 43.12030394119972,
+        "absorption_over_source": 0.999891105882892,
+        "relative_steady_balance": 0.00010889411710805041,
+        "outer_leakage": 0.0,
+        "obstacle_leakage": 0.0,
+        "pde_relative_residual": 0.0009454855190905624,
+        "total_mass": 255.00410133995405,
+        "rho_max": 0.16870820889960053,
+        "rho_min": 0.0
+      },
+      "saved_audit_max_difference": 1.4210854715202004e-14,
+      "eikonal_mean": 0.006040708161890507,
+      "eikonal_p95": 0.025542547926306725,
+      "source_strength": 0.01,
+      "spatial_dimension": 3,
+      "grid": [
+        40,
+        40,
+        16
+      ],
+      "fields_sha256": "c33295ee06abdad816af890a6ea6f93d5c4ee7d4f43cea4165fdcf345022c407",
+      "resolved_configuration": "configs/3d/p2p_none.yaml",
+      "seed": 42,
+      "profile": "demo",
+      "total_outer_iterations": 106,
+      "cumulative_projection_mass_removed": 0.0,
+      "generating_source_sha256": {
+        "src/uav_mfg/__init__.py": "13922c24d63bd2ccdf62ac7e9fd2c4004854f82eb7dd4df0025206cd0ecc9843",
+        "src/uav_mfg/baselines.py": "27e4a8f6a86cb06212209e9d7ae81be6e1be7358c3f409a250baa4a2576ed6f4",
+        "src/uav_mfg/cli.py": "319af77a8d95e5524040330061e0e7524f4836fe6e15c7125d5cda226c896105",
+        "src/uav_mfg/experiment.py": "91d468e39bde51db52dce740614ecfe8355017f4c493d7174d3aca6a1dd326e3",
+        "src/uav_mfg/fsm_kernel.cpp": "0a4a3768ee4fba1c6ab1f51ca3a7a5a2d431e45958b64d98bac639adf4eea3e1",
+        "src/uav_mfg/initialization.py": "b81f0acf943e296cd2c7e8e25e1689caa49ef32a8abb617d56d274fe45580107",
+        "src/uav_mfg/paper_plots.py": "a144aedd3f7276a714b0e017269bc68969a7e2de76a00666e781515345c1eb59",
+        "src/uav_mfg/plots.py": "dc4685f04ad86e1322fa7f804ffe748883dde1a445ec7e7e94f65b5efb2d3bdd",
+        "src/uav_mfg/problem.py": "9f24c67c45151ed3a22823a4927e52004f1dfbe3f70647ab0fa428840f2fd317",
+        "src/uav_mfg/reference.py": "806c147c1fb6f91afb4fe3ae7211b0c66776db6dbba94feb633ca20d0de797b5",
+        "src/uav_mfg/transport.py": "1195dc7acda426479b9759757f724b06ae92ddd3b3fad9a04623067242a232a1",
+        "src/uav_mfg/value.py": "4a0b05dd40a118eef294687cd7836a503f70a216ca33bcaf15da0595a03898cf"
+      },
+      "generating_environment": {
+        "python": "3.12.13",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.5.3",
+        "scipy": "1.18.1",
+        "matplotlib": "3.11.2",
+        "cuda_runtime": "13.0",
+        "gpu": "NVIDIA GeForce RTX 5070 Ti"
+      },
+      "same_parameter_continuation": false
+    },
+    {
+      "case": "p2p_obstacle",
+      "status": "converged",
+      "passed": true,
+      "fresh_flux_audit": {
+        "source_rate": 43.125,
+        "target_absorption": 43.123378095867395,
+        "absorption_over_source": 0.9999623906288092,
+        "relative_steady_balance": 3.760937119084807e-05,
+        "outer_leakage": 0.0,
+        "obstacle_leakage": 0.0,
+        "pde_relative_residual": 0.0009496109522526808,
+        "total_mass": 258.9589108522926,
+        "rho_max": 0.1676569962843916,
+        "rho_min": 0.0
+      },
+      "saved_audit_max_difference": 1.0842021724855044e-19,
+      "eikonal_mean": 0.016515076160430908,
+      "eikonal_p95": 0.08052322268486023,
+      "source_strength": 0.01,
+      "spatial_dimension": 3,
+      "grid": [
+        40,
+        40,
+        16
+      ],
+      "fields_sha256": "cea8ac2bf42998d398e0d58ee327c3c04c6bce1afb03ed89954036a6caa68728",
+      "resolved_configuration": "configs/3d/p2p_obstacle.yaml",
+      "seed": 42,
+      "profile": "demo",
+      "total_outer_iterations": 129,
+      "cumulative_projection_mass_removed": 0.0,
+      "generating_source_sha256": {
+        "src/uav_mfg/__init__.py": "13922c24d63bd2ccdf62ac7e9fd2c4004854f82eb7dd4df0025206cd0ecc9843",
+        "src/uav_mfg/baselines.py": "27e4a8f6a86cb06212209e9d7ae81be6e1be7358c3f409a250baa4a2576ed6f4",
+        "src/uav_mfg/cli.py": "319af77a8d95e5524040330061e0e7524f4836fe6e15c7125d5cda226c896105",
+        "src/uav_mfg/experiment.py": "91d468e39bde51db52dce740614ecfe8355017f4c493d7174d3aca6a1dd326e3",
+        "src/uav_mfg/fsm_kernel.cpp": "0a4a3768ee4fba1c6ab1f51ca3a7a5a2d431e45958b64d98bac639adf4eea3e1",
+        "src/uav_mfg/initialization.py": "b81f0acf943e296cd2c7e8e25e1689caa49ef32a8abb617d56d274fe45580107",
+        "src/uav_mfg/paper_plots.py": "a144aedd3f7276a714b0e017269bc68969a7e2de76a00666e781515345c1eb59",
+        "src/uav_mfg/plots.py": "dc4685f04ad86e1322fa7f804ffe748883dde1a445ec7e7e94f65b5efb2d3bdd",
+        "src/uav_mfg/problem.py": "9f24c67c45151ed3a22823a4927e52004f1dfbe3f70647ab0fa428840f2fd317",
+        "src/uav_mfg/reference.py": "806c147c1fb6f91afb4fe3ae7211b0c66776db6dbba94feb633ca20d0de797b5",
+        "src/uav_mfg/transport.py": "1195dc7acda426479b9759757f724b06ae92ddd3b3fad9a04623067242a232a1",
+        "src/uav_mfg/value.py": "4a0b05dd40a118eef294687cd7836a503f70a216ca33bcaf15da0595a03898cf"
+      },
+      "generating_environment": {
+        "python": "3.12.13",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.5.3",
+        "scipy": "1.18.1",
+        "matplotlib": "3.11.2",
+        "cuda_runtime": "13.0",
+        "gpu": "NVIDIA GeForce RTX 5070 Ti"
+      },
+      "same_parameter_continuation": false
+    }
+  ],
+  "maximum_relative_mass_imbalance": 0.000367893021297066,
+  "maximum_continuity_residual": 0.0009918429408034284,
+  "failed_or_insufficient_budget_trials": [
+    {
+      "trial": "paper_figures_2d/p2p_none",
+      "case": "p2p_none",
+      "status": "completed_unconverged",
+      "source_rate": 0.01,
+      "rho_upper_bound": 0.05,
+      "grid": [
+        100,
+        100,
+        1
+      ],
+      "rho_max": 0.049999999112633996,
+      "relative_steady_balance": 0.05785868031833621,
+      "pde_relative_residual": 0.6674802840221806,
+      "cumulative_projection_mass_removed": 0.23428680881439473
+    },
+    {
+      "trial": "paper_figures_2d/p2p_vortex",
+      "case": "p2p_vortex",
+      "status": "completed_unconverged",
+      "source_rate": 0.01,
+      "rho_upper_bound": 0.05,
+      "grid": [
+        100,
+        100,
+        1
+      ],
+      "rho_max": 0.049999999116576495,
+      "relative_steady_balance": 0.06895491702995349,
+      "pde_relative_residual": 1.225733506950644,
+      "cumulative_projection_mass_removed": 0.2947375279973931
+    },
+    {
+      "trial": "paper_figures_2d/p2p_vortex_obstacle",
+      "case": "p2p_vortex_obstacle",
+      "status": "completed_unconverged",
+      "source_rate": 0.01,
+      "rho_upper_bound": 0.05,
+      "grid": [
+        100,
+        100,
+        1
+      ],
+      "rho_max": 0.049999999116576495,
+      "relative_steady_balance": 0.011927039065438972,
+      "pde_relative_residual": 0.21201547841723153,
+      "cumulative_projection_mass_removed": 0.07537487376988002
+    },
+    {
+      "trial": "high_density_2d/homing_uniform",
+      "case": "homing_uniform",
+      "status": "completed_unconverged",
+      "source_rate": 0.0003,
+      "rho_upper_bound": 0.25,
+      "grid": [
+        100,
+        100,
+        1
+      ],
+      "rho_max": 0.04752140664931707,
+      "relative_steady_balance": 2.8223893955680552e-05,
+      "pde_relative_residual": 0.0022673267236574327,
+      "cumulative_projection_mass_removed": 0.0
+    },
+    {
+      "trial": "high_density_2d/homing_uniform_obstacle",
+      "case": "homing_uniform_obstacle",
+      "status": "completed_unconverged",
+      "source_rate": 0.0003,
+      "rho_upper_bound": 0.25,
+      "grid": [
+        100,
+        100,
+        1
+      ],
+      "rho_max": 0.24999990958977808,
+      "relative_steady_balance": 0.0010673216072615188,
+      "pde_relative_residual": 0.10571883686936166,
+      "cumulative_projection_mass_removed": 0.04020394810312516
+    },
+    {
+      "trial": "high_density_homing_obstacle/homing_uniform_obstacle",
+      "case": "homing_uniform_obstacle",
+      "status": "completed_unconverged",
+      "source_rate": 0.0002,
+      "rho_upper_bound": 0.25,
+      "grid": [
+        100,
+        100,
+        1
+      ],
+      "rho_max": 0.16387039275547804,
+      "relative_steady_balance": 0.000496764288567464,
+      "pde_relative_residual": 0.04207511468422075,
+      "cumulative_projection_mass_removed": 0.0
+    }
+  ],
+  "independent_low_demand_baselines": [
+    {
+      "method": "fsm",
+      "status": "converged",
+      "config": {
+        "provenance": {
+          "manuscript": "reference/paper/main.tex",
+          "submission": "ESWA-D-26-05581R1",
+          "geometry": "reconstructed from figure axes and visible projected geometry; not exact original YAML",
+          "coefficients": "unreported source strengths and wind constants are explicit assumptions",
+          "numerical_enhancement": "graph initialization and one-sided short-step Bellman inequality for branch selection; not stated in manuscript",
+          "source_strength": "reconstruction choice reduced to avoid density projection in the verification runs"
+        },
+        "domain": [
+          [
+            0,
+            100
+          ],
+          [
+            0,
+            100
+          ],
+          [
+            0,
+            30
+          ]
+        ],
+        "target": {
+          "type": "sphere",
+          "center": [
+            90,
+            90,
+            15
+          ],
+          "radius": 10
+        },
+        "source": {
+          "type": "sphere",
+          "center": [
+            10,
+            10,
+            15
+          ],
+          "radius": 10,
+          "rate": 0.001
+        },
+        "obstacles": [],
+        "wind": {
+          "type": "none"
+        },
+        "physics": {
+          "v_free": 20,
+          "v_min": 12,
+          "controllability_margin": 1,
+          "rho_jam": 0.25,
+          "rho_max": 0.05,
+          "beta": 5.0,
+          "clip_speed": false
+        },
+        "barrier": {
+          "height": 0.08,
+          "steepness": 0.05,
+          "buffer": 2.0,
+          "power": 1
+        },
+        "network": {
+          "widths": [
+            64,
+            128,
+            128,
+            64
+          ]
+        },
+        "training": {
+          "learning_rate": 0.001,
+          "epsilon": 0.0001,
+          "pde_points": 5000,
+          "boundary_points": 1000,
+          "initial_epochs": 1800,
+          "subsequent_epochs": 30,
+          "causality_weight": 1.0,
+          "causality_step": 2.5,
+          "causality_points": 256,
+          "initialization": "graph_pretrain",
+          "pretrain_epochs": 1800,
+          "value_mean_tolerance": 0.02,
+          "value_p95_tolerance": 0.12
+        },
+        "transport": {
+          "max_steps": 10000,
+          "change_tolerance": 1e-06,
+          "residual_tolerance": 0.0001,
+          "balance_tolerance": 0.001,
+          "cfl": 0.8,
+          "method": "explicit",
+          "backend": "cuda",
+          "graph_steps": 100
+        },
+        "coupling": {
+          "alpha": 0.2,
+          "max_iterations": 50,
+          "tolerance": 0.001
+        },
+        "profiles": {
+          "demo": {
+            "grid": [
+              40,
+              40,
+              16
+            ]
+          },
+          "diagnostic": {
+            "grid": [
+              20,
+              20,
+              8
+            ]
+          },
+          "paper": {
+            "grid": [
+              100,
+              100,
+              50
+            ]
+          }
+        },
+        "cases": [
+          "homing_none",
+          "homing_uniform",
+          "homing_uniform_obstacle",
+          "p2p_none",
+          "p2p_vortex",
+          "p2p_vortex_obstacle",
+          "p2p_obstacle",
+          "p2p_height_obstacle"
+        ],
+        "homing_rate": 1e-05,
+        "cpu_threads": 8,
+        "name": "p2p_none",
+        "profile": "demo",
+        "grid": [
+          40,
+          40,
+          16
+        ],
+        "seed": 42
+      },
+      "diagnostics": {
+        "source_rate": 4.3125,
+        "target_absorption": 4.308616655715863,
+        "absorption_over_source": 0.9990995143688957,
+        "relative_steady_balance": 0.0009004856311042968,
+        "outer_leakage": 0.0,
+        "obstacle_leakage": 0.0,
+        "pde_relative_residual": 0.000896670987908244,
+        "total_mass": 23.857460115151152,
+        "rho_max": 0.006179010994081326,
+        "rho_min": 0.0,
+        "picard_converged": true,
+        "picard_iterations": 32,
+        "eikonal_mean": 1.9987093632297757e-06,
+        "eikonal_p95": 1.999998235124867e-06,
+        "duration_seconds": 2.391184753010748,
+        "value_solver": {
+          "converged": true,
+          "cycles": 2,
+          "maximum_update": 5.142553050063725e-13,
+          "backend": "openmp_wavefront",
+          "threads": 8
+        },
+        "total_projection_mass_removed": 0.0
+      }
+    },
+    {
+      "method": "monolithic",
+      "status": "completed_unconverged",
+      "config": {
+        "provenance": {
+          "manuscript": "reference/paper/main.tex",
+          "submission": "ESWA-D-26-05581R1",
+          "geometry": "reconstructed from figure axes and visible projected geometry; not exact original YAML",
+          "coefficients": "unreported source strengths and wind constants are explicit assumptions",
+          "numerical_enhancement": "graph initialization and one-sided short-step Bellman inequality for branch selection; not stated in manuscript",
+          "source_strength": "reconstruction choice reduced to avoid density projection in the verification runs"
+        },
+        "domain": [
+          [
+            0,
+            100
+          ],
+          [
+            0,
+            100
+          ],
+          [
+            0,
+            30
+          ]
+        ],
+        "target": {
+          "type": "sphere",
+          "center": [
+            90,
+            90,
+            15
+          ],
+          "radius": 10
+        },
+        "source": {
+          "type": "sphere",
+          "center": [
+            10,
+            10,
+            15
+          ],
+          "radius": 10,
+          "rate": 0.001
+        },
+        "obstacles": [],
+        "wind": {
+          "type": "none"
+        },
+        "physics": {
+          "v_free": 20,
+          "v_min": 12,
+          "controllability_margin": 1,
+          "rho_jam": 0.25,
+          "rho_max": 0.05,
+          "beta": 5.0,
+          "clip_speed": false
+        },
+        "barrier": {
+          "height": 0.08,
+          "steepness": 0.05,
+          "buffer": 2.0,
+          "power": 1
+        },
+        "network": {
+          "widths": [
+            64,
+            128,
+            128,
+            64
+          ]
+        },
+        "training": {
+          "learning_rate": 0.001,
+          "epsilon": 0.0001,
+          "pde_points": 5000,
+          "boundary_points": 1000,
+          "initial_epochs": 1800,
+          "subsequent_epochs": 30,
+          "causality_weight": 1.0,
+          "causality_step": 2.5,
+          "causality_points": 256,
+          "initialization": "graph_pretrain",
+          "pretrain_epochs": 1800,
+          "value_mean_tolerance": 0.02,
+          "value_p95_tolerance": 0.12
+        },
+        "transport": {
+          "max_steps": 10000,
+          "change_tolerance": 1e-06,
+          "residual_tolerance": 0.0001,
+          "balance_tolerance": 0.001,
+          "cfl": 0.8,
+          "method": "explicit",
+          "backend": "cuda",
+          "graph_steps": 100
+        },
+        "coupling": {
+          "alpha": 0.2,
+          "max_iterations": 50,
+          "tolerance": 0.001
+        },
+        "profiles": {
+          "demo": {
+            "grid": [
+              40,
+              40,
+              16
+            ]
+          },
+          "diagnostic": {
+            "grid": [
+              20,
+              20,
+              8
+            ]
+          },
+          "paper": {
+            "grid": [
+              100,
+              100,
+              50
+            ]
+          }
+        },
+        "cases": [
+          "homing_none",
+          "homing_uniform",
+          "homing_uniform_obstacle",
+          "p2p_none",
+          "p2p_vortex",
+          "p2p_vortex_obstacle",
+          "p2p_obstacle",
+          "p2p_height_obstacle"
+        ],
+        "homing_rate": 1e-05,
+        "cpu_threads": 8,
+        "name": "p2p_none",
+        "profile": "demo",
+        "grid": [
+          40,
+          40,
+          16
+        ],
+        "seed": 42
+      },
+      "diagnostics": {
+        "source_rate": 4.3125,
+        "target_absorption": 0.1980689955115505,
+        "absorption_over_source": 0.04592904243746099,
+        "outer_leakage": 2.1170101063034963,
+        "outer_net_flux": -2.1170101063034963,
+        "relative_steady_balance": 1.4449718517778425,
+        "eikonal_mean": 2.266535602757358e-06,
+        "eikonal_p95": 6.079673767089844e-06,
+        "rho_max": 8.969332156993914e-06,
+        "duration_seconds": 92.04349419899518,
+        "optimization_epochs": 2000,
+        "audit": "Monte Carlo quadrature of actual neural flux, seed recorded; zero-wind/no-obstacle comparison",
+        "picard_converged": false
+      }
+    }
+  ],
+  "density_load_comparison": {
+    "same_cells_and_geometry": true,
+    "comparison_color_scale": [
+      0,
+      0.05
+    ],
+    "display_above_0_05": "saturated yellow with an explicit upper colorbar extension; no density projection",
+    "cases": [
+      {
+        "case": "homing_none",
+        "dimension": 2,
+        "low_directory": "results/paper_figures_verified/homing_none",
+        "high_directory": "results/high_density_verified_2d/homing_none",
+        "low_source_rate": 0.0001,
+        "high_source_rate": 0.0003,
+        "source_ratio": 2.9999999999999996,
+        "low_density_peak": 0.003776207478369077,
+        "high_density_peak": 0.011680894144822544,
+        "density_peak_ratio": 3.093287170192104,
+        "low_mean_density": 0.00017907823066159252,
+        "high_mean_density": 0.0005400364203206247,
+        "mean_density_ratio": 3.015645275952841,
+        "low_source_density_peak": 0.003776207478369077,
+        "high_source_density_peak": 0.011680894144822544
+      },
+      {
+        "case": "homing_uniform",
+        "dimension": 2,
+        "low_directory": "results/paper_figures_verified/homing_uniform",
+        "high_directory": "results/high_density_verified_2d/homing_uniform",
+        "low_source_rate": 0.0001,
+        "high_source_rate": 0.0003,
+        "source_ratio": 2.9999999999999996,
+        "low_density_peak": 0.010447876583728541,
+        "high_density_peak": 0.047564364165491,
+        "density_peak_ratio": 4.552538861300051,
+        "low_mean_density": 0.00018967544475397452,
+        "high_mean_density": 0.0005764666738054694,
+        "mean_density_ratio": 3.039226688268461,
+        "low_source_density_peak": 0.010447876583728541,
+        "high_source_density_peak": 0.047564364165491
+      },
+      {
+        "case": "homing_uniform_obstacle",
+        "dimension": 2,
+        "low_directory": "results/paper_figures_verified/homing_uniform_obstacle",
+        "high_directory": "results/high_density_verified_2d/homing_uniform_obstacle",
+        "low_source_rate": 0.0001,
+        "high_source_rate": 0.0002,
+        "source_ratio": 2.0,
+        "low_density_peak": 0.019139456213429704,
+        "high_density_peak": 0.16482799814407573,
+        "density_peak_ratio": 8.611947816386749,
+        "low_mean_density": 0.00019282967631381264,
+        "high_mean_density": 0.0004005414570263691,
+        "mean_density_ratio": 2.077177458798015,
+        "low_source_density_peak": 0.019139456213429704,
+        "high_source_density_peak": 0.16482799814407573
+      },
+      {
+        "case": "p2p_none",
+        "dimension": 2,
+        "low_directory": "results/paper_figures_verified/p2p_none",
+        "high_directory": "results/high_density_verified_2d/p2p_none",
+        "low_source_rate": 0.006,
+        "high_source_rate": 0.018,
+        "source_ratio": 2.9999999999999996,
+        "low_density_peak": 0.03311984207541753,
+        "high_density_peak": 0.1373139075271949,
+        "density_peak_ratio": 4.145971083271352,
+        "low_mean_density": 0.0010646204730185656,
+        "high_mean_density": 0.0033933991786825658,
+        "mean_density_ratio": 3.1874261905382215,
+        "low_source_density_peak": 0.006589189465406188,
+        "high_source_density_peak": 0.020969753252809253
+      },
+      {
+        "case": "p2p_vortex",
+        "dimension": 2,
+        "low_directory": "results/paper_figures_verified/p2p_vortex",
+        "high_directory": "results/high_density_verified_2d/p2p_vortex",
+        "low_source_rate": 0.006,
+        "high_source_rate": 0.018,
+        "source_ratio": 2.9999999999999996,
+        "low_density_peak": 0.03971365440887638,
+        "high_density_peak": 0.1566462519323811,
+        "density_peak_ratio": 3.9443927854035308,
+        "low_mean_density": 0.001025090926416782,
+        "high_mean_density": 0.0032524843721959264,
+        "mean_density_ratio": 3.1728740235415267,
+        "low_source_density_peak": 0.006185109351328388,
+        "high_source_density_peak": 0.01955242689815059
+      },
+      {
+        "case": "p2p_vortex_obstacle",
+        "dimension": 2,
+        "low_directory": "results/paper_figures_verified/p2p_vortex_obstacle",
+        "high_directory": "results/high_density_verified_2d/p2p_vortex_obstacle",
+        "low_source_rate": 0.006,
+        "high_source_rate": 0.018,
+        "source_ratio": 2.9999999999999996,
+        "low_density_peak": 0.040126061077127906,
+        "high_density_peak": 0.08393139207878865,
+        "density_peak_ratio": 2.0916927758610737,
+        "low_mean_density": 0.001080410705680666,
+        "high_mean_density": 0.003272523682857745,
+        "mean_density_ratio": 3.0289626580440383,
+        "low_source_density_peak": 0.006372957848829336,
+        "high_source_density_peak": 0.01483800211909633
+      },
+      {
+        "case": "p2p_none",
+        "dimension": 3,
+        "low_directory": "results/eswa_verified/p2p_none",
+        "high_directory": "results/high_density_verified_3d/p2p_none",
+        "low_source_rate": 0.001,
+        "high_source_rate": 0.01,
+        "source_ratio": 10.0,
+        "low_density_peak": 0.010350773529078618,
+        "high_density_peak": 0.16870820889960053,
+        "density_peak_ratio": 16.299091891600707,
+        "low_mean_density": 8.095548512500046e-05,
+        "high_mean_density": 0.0008624108267679697,
+        "mean_density_ratio": 10.65290172044985,
+        "low_source_density_peak": 0.001087130225165685,
+        "high_source_density_peak": 0.011348457917569315
+      },
+      {
+        "case": "p2p_obstacle",
+        "dimension": 3,
+        "low_directory": "results/eswa_verified/p2p_obstacle",
+        "high_directory": "results/high_density_verified_3d/p2p_obstacle",
+        "low_source_rate": 0.001,
+        "high_source_rate": 0.01,
+        "source_ratio": 10.0,
+        "low_density_peak": 0.011641537023181832,
+        "high_density_peak": 0.1676569962843916,
+        "density_peak_ratio": 14.401620331622505,
+        "low_mean_density": 8.279609210586558e-05,
+        "high_mean_density": 0.000884762454331984,
+        "mean_density_ratio": 10.686041234901523,
+        "low_source_density_peak": 0.0010952399617794317,
+        "high_source_density_peak": 0.010770403639826148
+      },
+      {
+        "case": "p2p_height_obstacle",
+        "dimension": 3,
+        "low_directory": "results/eswa_verified/p2p_height_obstacle",
+        "high_directory": "results/high_density_verified_3d/p2p_height_obstacle",
+        "low_source_rate": 0.001,
+        "high_source_rate": 0.01,
+        "source_ratio": 10.0,
+        "low_density_peak": 0.010631355538037398,
+        "high_density_peak": 0.1345177523997743,
+        "density_peak_ratio": 12.652925764592286,
+        "low_mean_density": 7.830467385589849e-05,
+        "high_mean_density": 0.0008162306997092242,
+        "mean_density_ratio": 10.423780082544072,
+        "low_source_density_peak": 0.000980397674626448,
+        "high_source_density_peak": 0.010421863658301198
+      }
+    ]
+  },
+  "figure_sha256": {
+    "figures/fig4_density_relative.png": "49f845aa0863a7720572ed8c0bf8776f6885a4b8a3e867cd52d616c91b3c681c",
+    "figures/density_load_comparison.png": "a94378195a202a9a07be6d97fc4962c9f198883c691198d86626a0a45bf524e2"
+  },
+  "limitations": [
+    "Unreported experiment coefficients are explicit reconstruction choices.",
+    "Additional graph initialization, Bellman penalty and residual-based training skips are not manuscript-specified.",
+    "Density hotspots remain nearer the target; outer 3D spherical-source slices are empty.",
+    "The monolithic baseline has only 2000 epochs and fails its mass audit.",
+    "No original table-value replication, complete sensitivity scan, ABM or optional diffusion is claimed."
+  ],
+  "artifacts": "Large fields and checkpoints are retained locally, excluded from Git, and can be regenerated by docs/REPRODUCTION.md."
+}

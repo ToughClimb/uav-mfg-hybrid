@@ -1,0 +1,6 @@
+extends: verified_demo.yaml
+provenance:
+  continuation: additional optimization budget from the saved checkpoint; physical parameters and all convergence thresholds unchanged
+training:
+  causality_step: 1.0
+  subsequent_epochs: 200
